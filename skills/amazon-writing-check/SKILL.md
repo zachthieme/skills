@@ -35,6 +35,8 @@ Audit a document against Amazon's narrative memo standards. This skill is a post
 
 **Active voice.** Search for passive constructions: "is being," "was," "were," "has been," "will be," "can be," "should be." Rewrite in active voice. "The feature was launched by the team" becomes "The team launched the feature."
 
+**No first person.** Flag every "I," "me," "my," "we," "us," and "our." Rewrite with a named actor as the subject: a team, a role, a system, or "this document." "We will migrate the billing service by June 2027" becomes "The infrastructure team will migrate the billing service by June 2027." A passive rewrite ("The billing service will be migrated") is not a fix: it fails the active voice check and hides the owner.
+
 **Weasel words.** Flag and replace every instance from this list:
 
 | Banned | Fix |
@@ -59,7 +61,7 @@ Audit a document against Amazon's narrative memo standards. This skill is a post
 
 **Banned buzzwords.** Flag every use of "platform" that is not a proper noun (e.g., a product named "Acme Platform" is fine). At Amazon, "platform" is a hand-wavy word that avoids describing what something actually does. Replace each instance with what it specifically means: "the provisioning system," "fleet management," "the billing service," "the control plane," "the deployment pipeline," etc. Also flag: "ecosystem," "solution," "leverage" (as a verb), "synergy," "holistic," "seamless," "scalable," "best-in-class," "game-changer," "streamline," "empower," "unlock," "value-add," "impactful," "move the needle," "low-hanging fruit," "north star." These words obscure meaning. Describe the thing, not the category.
 
-**Adjectives hiding data.** Every adjective describing magnitude ("fast," "large," "expensive," "better") must be replaced with a number. "We made performance much faster" becomes "We reduced TP90 latency from 10ms to 1ms." "Sales increased significantly" becomes "Unit sales increased 40% in Q4 2025 vs. Q4 2024."
+**Adjectives hiding data.** Every adjective describing magnitude ("fast," "large," "expensive," "better") must be replaced with a number. "We made performance much faster" becomes "The checkout team reduced TP90 latency from 10ms to 1ms." "Sales increased significantly" becomes "Unit sales increased 40% in Q4 2025 vs. Q4 2024."
 
 **Absolute references.** Flag relative time references ("last week," "recently," "next quarter," "3 weeks ago"). Replace with absolute dates. "The deadline is next week" becomes "The deadline is Friday July 25, 2026." "We arranged this recently" becomes "The team arranged this in March 2026."
 
@@ -111,13 +113,13 @@ Audit a document against Amazon's narrative memo standards. This skill is a post
 
 ### 5. Argument Quality Checks
 
-**Assumptions disguised as facts.** Flag any statement that presents an assumption as established fact. The fix is to label it: "Our assumption is X because Y." or "We lack data on X. We assume Y based on Z."
+**Assumptions disguised as facts.** Flag any statement that presents an assumption as established fact. The fix is to label it: "The assumption is X because Y." or "No data exists on X. The working assumption is Y, based on Z."
 
 **Activities without impact.** In the strategic priorities or plan section, flag any activity that is not connected to a specific goal with numerical backing. Readers will calculate whether your activities could plausibly produce the projected results.
 
-**Evidence for recommendations.** Every recommendation must be grounded in either data or prior results ("when we did X, we saw Y"). Flag any recommendation that is purely speculative with no supporting evidence.
+**Evidence for recommendations.** Every recommendation must be grounded in either data or prior results ("when the team did X, Y happened"). Flag any recommendation that is purely speculative with no supporting evidence.
 
-**Inconsistency between narrative and resources.** Flag any case where the stated priorities do not match the proposed resource allocation. If the document says "customer acquisition is our top priority" but allocates 80% of resources to maintenance, flag the inconsistency.
+**Inconsistency between narrative and resources.** Flag any case where the stated priorities do not match the proposed resource allocation. If the document says "customer acquisition is the top priority" but allocates 80% of resources to maintenance, flag the inconsistency.
 
 **Selling vs. truth-seeking.** The document should read as honest analysis, not a pitch. Flag any section that reads like it is trying to persuade rather than inform. Indicators: only positive data shown, risks minimized or absent, alternatives dismissed without analysis.
 
@@ -125,7 +127,7 @@ Audit a document against Amazon's narrative memo standards. This skill is a post
 
 **Customer clarity.** The document must make clear who the customer is and frame the problem from their perspective. Flag if the customer is never defined or if the framing is purely internal/organizational.
 
-**The Four Answers.** For any question the document anticipates or answers: the answer must be Yes, No, a number, or "We don't know and will follow up by [date]." Flag any answer that hedges without committing.
+**The Four Answers.** For any question the document anticipates or answers: the answer must be Yes, No, a number, or "Unknown; [owner] will follow up by [date]." Flag any answer that hedges without committing.
 
 **No author attribution.** Amazon 6-pagers do not include author names. Ideas are judged on merit, not credentials. Flag if the author's name appears on the document (title page is acceptable for routing purposes, but not in the body).
 
