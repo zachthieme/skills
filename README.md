@@ -9,6 +9,7 @@ Personal Claude Code skills for AI-assisted work. One clone and one script insta
 | [`amazon-writing-check`](skills/amazon-writing-check/SKILL.md) | Audit a drafted document against Amazon 6-pager / narrative memo standards |
 | [`writing-polished-docs`](skills/writing-polished-docs/SKILL.md) | Write proposals, strategy docs, and one-pagers in the author's voice |
 | [`capturing-voice`](skills/capturing-voice/SKILL.md) | Build the voice profile `writing-polished-docs` uses from samples of your own writing |
+| [`finishing-up`](skills/finishing-up/SKILL.md) | Wrap up a work session: commit, update the changelog, file findings as issues, push, never deploy |
 
 ## Install
 
