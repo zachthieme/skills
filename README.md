@@ -18,7 +18,7 @@ git clone https://github.com/zachthieme/skills.git ~/code/skills
 ~/code/skills/install.sh
 ```
 
-`install.sh` symlinks each directory in `skills/` into `~/.claude/skills` (override with `CLAUDE_SKILLS_DIR`), so edits in this repo take effect immediately on that host. Other hosts pick them up with `git pull`. It is safe to re-run and skips any existing skill that isn't a symlink.
+`install.sh` symlinks each directory in `skills/` into `~/.claude/skills` (override with `CLAUDE_SKILLS_DIR`), so edits in this repo take effect immediately on that host. Other hosts pick them up with `git pull`. It is safe to re-run and works when run through a symlink. It skips any existing skill that isn't a symlink, links the rest, and exits non-zero so a skipped skill isn't missed.
 
 The `skills/<name>/SKILL.md` layout also works with `npx skills add zachthieme/skills`.
 
