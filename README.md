@@ -12,13 +12,13 @@ Personal Claude Code skills I've written for AI-assisted work, kept in one place
 ## Install
 
 ```sh
-git clone <this repo> ~/code/skills
+git clone https://github.com/zachthieme/skills.git ~/code/skills
 ~/code/skills/install.sh
 ```
 
 `install.sh` symlinks each directory in `skills/` into `~/.claude/skills` (override with `CLAUDE_SKILLS_DIR`), so edits in this repo are live everywhere. It is safe to re-run and skips any existing skill that isn't a symlink.
 
-The `skills/<name>/SKILL.md` layout also works with `npx skills add <owner>/<repo>`.
+The `skills/<name>/SKILL.md` layout also works with `npx skills add zachthieme/skills`.
 
 ## Adding a skill
 
