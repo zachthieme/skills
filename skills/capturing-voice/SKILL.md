@@ -11,7 +11,7 @@ Turn writing samples into the `voice-patterns.md` file that `writing-polished-do
 
 ### 1. Gather samples
 
-Ask the user for writing samples: file paths, pasted text, or URLs. Aim for 3 to 6, covering every register they write in (formal proposals, blog posts). Label each sample with its register.
+Ask the user for writing samples: file paths, pasted text, or URLs. Aim for 3 to 6, covering every register they write in (formal proposals, blog posts, email). Label each sample with its register.
 
 Done when: at least 3 samples are read in full, each labeled, and at least 2 belong to the formal register.
 
@@ -19,7 +19,7 @@ Done when: at least 3 samples are read in full, each labeled, and at least 2 bel
 
 Find the target file: `voice-patterns.md` in the `writing-polished-docs` skill directory (resolve symlinks, so edits land in the source repo). Read it in full. Its section headings are the template:
 
-- Two registers, same voice
+- Three registers, same voice
 - Sentence structure
 - Characteristic constructions
 - Narrative structure
@@ -27,6 +27,7 @@ Find the target file: `voice-patterns.md` in the `writing-polished-docs` skill d
 - What to avoid
 - Paragraph rhythm
 - Bold and emphasis
+- Email
 
 Some lines in the current file are **policy**, not voice, and carry over unchanged unless the user says otherwise: the em dash ban, third person in proposals, and every "In a 6-pager, ..." exception.
 
@@ -51,3 +52,5 @@ Done when: a search of the draft for each sample's distinctive nouns and numbers
 ### 5. Write and review
 
 Write the new `voice-patterns.md` in the template's section order, using periods, commas, colons, or parentheses wherever a dash might go. Show the user the diff against the previous file and walk through the biggest changes in voice. Confirm the file contains zero em dashes (U+2014).
+
+If the Email section changed, update `copilot-email-instructions.md` in the same directory to match, in first person ("I lead...", "my name"), and confirm it also contains zero em dashes.

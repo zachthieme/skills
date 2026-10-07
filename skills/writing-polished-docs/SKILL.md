@@ -1,6 +1,6 @@
 ---
 name: writing-polished-docs
-description: Use when the user asks you to write or edit a proposal, strategy doc, one-pager, or any polished document for an audience. Also use when the user says to "write like me" or asks for voice/tone consistency.
+description: Use when the user asks you to write or edit a proposal, strategy doc, one-pager, or any polished document for an audience, or drafts an email or reply in their voice. Also use when the user says to "write like me" or asks for voice/tone consistency.
 ---
 
 # Writing Polished Documents
@@ -30,6 +30,7 @@ Kill these on sight: "Additionally," "Furthermore," "It's important to note," "I
 
 - **Proposals and polished docs:** run the `amazon-writing-check` audit and apply its Blocking and Should Fix rewrites. Skip section 4 (6-Pager Format) and section 6 (Amazon Cultural Checks) unless the doc is a 6-pager or narrative memo.
 - **Blog and personal writing:** skip the audit. Check the hard rules above and the voice patterns.
+- **Email:** skip the audit. Check the hard rules above and the Email section of `voice-patterns.md`.
 - **Every register:** confirm the draft matches `voice-patterns.md` and contains zero em dashes.
 
 ## When Voice and Amazon Rules Conflict

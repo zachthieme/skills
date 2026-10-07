@@ -7,7 +7,7 @@ Personal Claude Code skills for AI-assisted work. One clone and one script insta
 | Skill | Purpose |
 | --- | --- |
 | [`amazon-writing-check`](skills/amazon-writing-check/SKILL.md) | Audit a drafted document against Amazon 6-pager / narrative memo standards |
-| [`writing-polished-docs`](skills/writing-polished-docs/SKILL.md) | Write proposals, strategy docs, and one-pagers in the author's voice |
+| [`writing-polished-docs`](skills/writing-polished-docs/SKILL.md) | Write proposals, strategy docs, one-pagers, and email in the author's voice |
 | [`capturing-voice`](skills/capturing-voice/SKILL.md) | Build the voice profile `writing-polished-docs` uses from samples of your own writing |
 | [`finishing-up`](skills/finishing-up/SKILL.md) | Wrap up a work session: commit, update the changelog, file findings as issues, push, never deploy |
 
@@ -30,6 +30,8 @@ The `skills/<name>/SKILL.md` layout also works with `npx skills add zachthieme/s
 2. Gather 3 to 6 samples of your writing, covering each register you use (formal proposals, blog posts).
 3. Ask Claude to capture your voice from those samples. The `capturing-voice` skill rewrites `voice-patterns.md` from them and replaces every example with an invented one, so nothing from your samples ends up in the file.
 4. Review the diff and commit.
+
+For Outlook Copilot, paste the block in [`copilot-email-instructions.md`](skills/writing-polished-docs/copilot-email-instructions.md) into Copilot's custom instructions. It's a condensed copy of the Email section of `voice-patterns.md`, so update both together.
 
 `amazon-writing-check` needs no changes: its rules apply to any author. A few rules live in `voice-patterns.md` as policy rather than voice (no em dashes, third person in proposals, the 6-pager exceptions). `capturing-voice` keeps them unless you tell it otherwise.
 
